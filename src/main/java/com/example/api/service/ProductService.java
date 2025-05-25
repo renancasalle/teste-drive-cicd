@@ -12,4 +12,7 @@ public interface ProductService {
     Product updateProduct(UUID id, Product updatedProduct);
     void deleteProduct(UUID id);
     boolean existsProductByName(String name);
+
+
 }
+
