@@ -5,12 +5,12 @@ import lombok.Getter;
 import java.time.LocalDateTime;
 
 @Getter
-public class ExectionReponse {
+public class ExceptionResponse {
     private final Integer status;
     private final String detail;
     private final LocalDateTime timestamp = LocalDateTime.now();
 
-    public ExectionReponse(Integer status, String detail) {
+    public ExceptionResponse(Integer status, String detail) {
         this.status = status;
         this.detail = detail;
     }
