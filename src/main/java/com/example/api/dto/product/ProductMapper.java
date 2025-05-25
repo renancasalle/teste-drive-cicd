@@ -11,7 +11,6 @@ public class ProductMapper {
                 .description(dto.getDescription())
                 .price(dto.getPrice())
                 .build();
-
     }
 
     public static Product toProduct(ProductUpdateResquetDto dto) {
@@ -34,5 +33,3 @@ public class ProductMapper {
                 .build();
     }
 }
-
-
