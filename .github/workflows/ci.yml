@@ -59,4 +59,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: leohsantos/ci-cd-api:latest
+          tags: renancasalle/teste-drive-cicd:latest
