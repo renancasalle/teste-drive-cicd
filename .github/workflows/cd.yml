@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -17,4 +17,4 @@ jobs:
         run: docker rm ci-example || true
 
       - name: Run Docker container
-        run: docker run --name ci-example -d -p 8080:8080 renancasalle/teste-drive-cicd:latest
+        run: docker run --name ci-example -d -p 8080:8080 --restart unless-stopped renancasalle/teste-drive-cicd:latest
